@@ -1,0 +1,136 @@
+/*去掉原始input的边框*/
+.jl-calendar {
+    outline: 0;
+    border: 0;
+    /*日期控件的默认宽度*/
+    width: 72px;
+}
+
+/*外层div*/
+.jl-outDiv {
+    display: inline-block;
+    border: 1px solid #D4D4D4;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+}
+
+/*日历图标*/
+.jl-calendar-icon {
+    /*margin-top: 1px;*/
+    color: #95B8E7;
+    cursor: pointer;
+    margin-top: 1px;
+}
+
+/*日期控件主体外框*/
+.jl-calendarOutline {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #BBBBBB;
+    width: 190px;
+    height: 216px;
+    background: white;
+    z-index: 9999;
+}
+
+/*主体顶部*/
+.jl-panel-top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.jl-panel-middle {
+    text-align: center;
+    background: #BDEBEE;
+    height: 18px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    line-height: 18px;
+}
+
+.jl-panel-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 144px;
+    border-bottom: 1px solid #BDEBEE;
+}
+
+.jl-dayCell {
+    border: 1px solid #BDEBEE;
+    height: 18px;
+    width: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    margin-left: 1.5%;
+}
+
+.jl-monthCell {
+    border: 1px solid #BDEBEE;
+    height: 25px;
+    width: 56px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.jl-quarterCell, .jl-halfCell {
+    border: 1px solid #BDEBEE;
+    height: 25px;
+    width: 186px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.jl-cell {
+    cursor: pointer;
+}
+
+.jl-panel-body :hover {
+    background: #BDEBEE;
+}
+
+.jl-panel-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    padding-right: 3px;
+    padding-top: 2px;
+}
+
+/*控件主体显示年份的input*/
+.jl-inputYear {
+    width: 60px;
+    text-align: center;
+}
+
+.jl-inputMonth {
+    width: 30px;
+    text-align: center;
+    margin-left: 3px;
+}
+
+/*所有的箭头*/
+.jl-arrow {
+    cursor: pointer;
+    font-size: 21px !important;
+}
+
+/*某个日期被选中时添加的class*/
+.jl-selected {
+    background: #BDEBEE;
+}
